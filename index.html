@@ -1,45 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" data-theme="light">
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Your page title here :)</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <head>
+        <!-- Basic Page Needs –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta charset="utf-8">
+        <title>Jamie Bullock</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Mobile Specific Metas –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+        <!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/barebones.css">
+        <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/barebones.css">
+        <link rel="stylesheet" href="css/skeleton-legacy.css">
+        <link rel="stylesheet" href="css/custom.css">
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon-16.png">
+        <!-- Scripts –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <script src="js/smoothscroll.min.js"></script>
+        <script src="https://kit.fontawesome.com/fa7990bc77.js" crossorigin="anonymous"></script>
 
-</head>
-<body>
+        <!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="icon" href="images/favicon-16.png" sizes="16x16">
+    </head>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="grid-container halves">
-      <div>
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="https://acahir.github.io/Barebones/">Barebones documentation</a>.</p>
-      </div>
-    </div>
-  </div>
+    <body>
+        <!-- Light / Dark buttons –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div class="grid-container quarters">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="themeButtons">
+                <button class="button-primary lightTheme">Light</button>
+                <button class="darkTheme">Dark</button>
+            </div>
+        </div>
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
+        <!-- Hack to make light / dark buttons work -->
+        <nav class="navbar" id="navbar" style="display: none;">
+        </nav>
+
+        <div class="container">
+            <div class="value-props grid-container">
+                <div class="value-prop">
+                    <i class="fab fa-medium"></i>
+                    <a class="button" href="https://medium.com/@jamiebullock">Writing</a>
+                </div>
+                <div class="value-prop">
+                    <i class="fab fa-github"></i>
+                    <a class="button" href="https://github.com/jamiebullock">Code</a>
+                </div>
+                <div class="value-prop">
+                    <i class="fab fa-linkedin"></i>
+                    <a class="button" href="https://linkedin.com/in/jamiebullock">Resumé</a>
+                </div>
+            </div>
+
+            <!-- About section -->
+            <div id="about">
+                <h6 class="docs-header">About Me</h6>
+                <p>
+
+                Hi. I'm Jamie. I live in Birmingham and <a href="https://en.wikipedia.org/wiki/Telecommuting">work remotely</a> as a software developer at <a href="http://noiiz.com">Noiiz</a>, a music tech startup that seeks to empower the world to experience joy through music creation. I have a PhD in Music Technology, and over 15 years programming experience. I am fascinated by bringing research and development together to create new technologies that enhance human creativity. My main interest currently is musical applications of artificial intelligence. I have three children, and in my spare time I enjoy writing, strength training, <a href="https://www.instagram.com/p/BkA9xgHgpmP">playing guitar</a>, and creating more software! Of course, none of this would be possible without lotsa great coffee. ☕️
+
+                </p>
+            </div>
+
+            <!-- Contact section -->
+            <div id="contact" class="docs-section grid-container full">
+                <p><a href="http://twitter.com/jamiebullock">@jamiebullock</a></p>
+            </div>
+
+
+
+        <script src="js/site.js"></script>
+
+    </body>
 </html>
